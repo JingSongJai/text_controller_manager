@@ -1,11 +1,14 @@
 name: text_controller_manager
 description: A library to auto-generate TextEditingControllers.
 version: 0.0.1
-homepage:
 
 environment:
   sdk: ^3.8.1
   flutter: ">=1.17.0"
+
+homepage: https://github.com/JingSongJai/text_controller_manager
+
+repository: https://github.com/JingSongJai/text_controller_manager
 
 dependencies:
   flutter:

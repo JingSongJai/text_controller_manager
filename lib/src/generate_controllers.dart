@@ -1,6 +1,17 @@
 import 'dart:io';
 import 'package:logging/logging.dart';
 
+/// Generates a Flutter controller class with [TextEditingController] fields.
+///
+/// [className] is the name of the class to generate.
+/// [fields] is a list of field names to include as TextEditingControllers.
+/// [defaultValues] provides optional default values for the fields.
+///
+/// The generated class includes:
+/// - a constructor that accepts initial values,
+/// - a `disposeAll()` method to dispose controllers,
+/// - a `toMap()` method to get the values as a map.
+
 void generateController(
   String className,
   List<String> fields,

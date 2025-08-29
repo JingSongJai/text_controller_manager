@@ -4,7 +4,7 @@ import 'dart:io';
 import 'package:logging/logging.dart';
 import 'package:yaml/yaml.dart';
 import 'package:path/path.dart' as p;
-import '../tool/generate_controllers.dart';
+import 'package:text_controller_manager/src/generate_controllers.dart';
 
 void main(List<String> arguments) {
   // Setup logger
@@ -16,7 +16,7 @@ void main(List<String> arguments) {
 
   // Default config
   String configPath = 'controllers.yaml';
-  String outputDir = 'lib/src/';
+  String outputDir = 'lib/controllers/';
 
   // Parse arguments
   // Parse arguments
@@ -44,7 +44,7 @@ void main(List<String> arguments) {
 
               Options:
                 -c, --config   Path to YAML configuration file (default: controllers.yaml)
-                -o, --output   Output directory for generated controllers (default: lib/src/)
+                -o, --output   Output directory for generated controllers (default: lib/controllers/)
                 -h, --help     Show this help message
               ''');
       exit(0);
