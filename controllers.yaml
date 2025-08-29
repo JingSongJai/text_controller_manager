@@ -1,0 +1,11 @@
+# tool/controllers_config.yaml
+
+controllers:
+  - className: ProfileFormControllers
+    fields:
+      - firstName
+      - lastName
+      - email
+    initialValues:
+      firstName: John
+      email: john@example.com
