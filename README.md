@@ -66,13 +66,13 @@ dart run text_controller_manager:generate
 2. **Custom YAML file**:
 
 ```bash
-dart run text_controller_manager:generate --config my_controllers.yaml
+dart run text_controller_manager:generate -c my_controllers.yaml
 ```
 
 3. **Custom output directory**:
 
 ```bash
-dart run text_controller_manager:generate --output lib/custom_controllers/
+dart run text_controller_manager:generate -c lib/custom_controllers/
 ```
 
 4. **Custom config and output**:
@@ -155,14 +155,5 @@ class UserController {
 ## **License**
 
 This project is licensed under the [MIT License](LICENSE).
-
----
-
-Brother, this README:
-
-- ✅ Clearly explains CLI usage.
-- ✅ Includes YAML example.
-- ✅ Shows generated class example.
-- ✅ Satisfies pub.dev checks for **example and documentation**.
 
 ---

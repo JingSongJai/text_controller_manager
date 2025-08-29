@@ -1,6 +1,6 @@
 name: text_controller_manager
 description: A library to auto-generate TextEditingControllers.
-version: 0.0.3
+version: 0.0.4
 
 environment:
   sdk: ^3.8.1

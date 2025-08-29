@@ -1,11 +1,7 @@
 # tool/controllers_config.yaml
 
 controllers:
-  - className: ProfileFormControllers
+  - className: LoginController
     fields:
-      - firstName
-      - lastName
       - email
-    initialValues:
-      firstName: John
-      email: john@example.com
+      - password

@@ -4,7 +4,7 @@ import 'dart:io';
 import 'package:logging/logging.dart';
 import 'package:yaml/yaml.dart';
 import 'package:path/path.dart' as p;
-import 'package:text_controller_manager/src/generate_controllers.dart';
+import 'package:text_controller_manager/text_controller_manager.dart';
 
 void main(List<String> arguments) {
   // Setup logger
@@ -18,7 +18,6 @@ void main(List<String> arguments) {
   String configPath = 'controllers.yaml';
   String outputDir = 'lib/controllers/';
 
-  // Parse arguments
   // Parse arguments
   for (int i = 0; i < arguments.length; i++) {
     final arg = arguments[i];
@@ -97,7 +96,7 @@ void main(List<String> arguments) {
       if (!yamlClassNames.contains(fileName)) {
         try {
           file.deleteSync();
-          log.info('🗑 Deleted obsolete controller: $yamlClassNames');
+          log.info('🗑 Deleted obsolete controller: ${file.path}');
         } catch (e) {
           log.warning('Failed to delete ${file.path}: $e');
         }
